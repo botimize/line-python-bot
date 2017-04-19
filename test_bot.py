@@ -14,9 +14,9 @@ from botimize import Botimize
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('MmmCH2ehgjHJTC8C5NWsPgO1fNcFyn5Xk1N5QftSpJMaukLkJ2WIsGHIMWFmYD2w8rDIe9zIz58GyoLJGMirKODWIu19Ly2H8m58iXwPgd7YLloa1QdDC45G3Rg8/Jw+jECIwVe7/RIMnSobbMPthAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('32c7e92b6bda35f65798951cd28d7120')
-botimize = Botimize('13CIVSYVFO85N1EI116G6J3O3E93IXZY',"line")
+line_bot_api = LineBotApi(<YOUR_CHANNEL_ACCESS_TOKEN>)
+handler = WebhookHandler(<YOUR_CHANNEL_SECRET>)
+botimize = Botimize(<YOUR_BOTIMIZE_APIKEY>,"line")
 
 @app.route("/callback", methods=['POST'])
 def callback():
