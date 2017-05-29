@@ -1,6 +1,6 @@
 # Create your Line bot in Python with botimize bot-analytics service
 
-Here is our 10 min guide to create an echo-bot on telegram with [botimize](http://www.botimize.io) **bot analytic** service.
+Here is our 10 min guide to create an echo-bot on LINE with [botimize](http://www.botimize.io) **bot analytic** service.
 
 ## Installation
 
@@ -30,7 +30,7 @@ See your **Your_Botimize_Api_Key** by clicking Project Setting
 
 ## Create a Python bot
 
-Create a Python script (e.g. echoBot.py) and copy this into it. 
+Create a Python script (e.g. echoBot.py) and copy this into it.
 
 Notice you have to replace <YOUR_CHANNEL_ACCESS_TOKEN>, <YOUR_CHANNEL_SECRET> and <YOUR_BOTIMIZE_APIKEY>.
 
