@@ -1,11 +1,12 @@
 # Create your Line bot in Python with botimize bot-analytics service
 
-Here is our 10 min guide to create an echo-bot on LINE with [botimize](http://www.botimize.io) **bot analytic** service.
+Here is our 10 min guide to create an echo-bot on telegram with [botimize](http://www.botimize.io) **bot analytic** service.
 
 ## Installation
 
-```python
-$ pip install line-bot-sdk
+Pre-request
+```
+$ pip install -r requirements.txt
 ```
 
 ## Create a Line bot and get its Channel token,Channel secret
@@ -30,7 +31,7 @@ See your **Your_Botimize_Api_Key** by clicking Project Setting
 
 ## Create a Python bot
 
-Create a Python script (e.g. echoBot.py) and copy this into it.
+Create a Python script (e.g. echoBot.py) and copy this into it. 
 
 Notice you have to replace <YOUR_CHANNEL_ACCESS_TOKEN>, <YOUR_CHANNEL_SECRET> and <YOUR_BOTIMIZE_APIKEY>.
 
@@ -89,11 +90,20 @@ if __name__ == "__main__":
 ```
 
 ## Talk to your bot
-Run on the terminal and listen to 8080 port.
+Run on the terminal.
 
 ```
-python node echoBot.js
+python echoBot.py
 ```
+
+Use ngrok listen to 8080 port and paste webhook URL to LINE developers
+
+```
+./ngrok http 8080
+```
+![webhook](/demo/webhook.png)
+
 Now you can talk to your bot!
 I name the bot as kakalan456 you can find your bot with the bot name.
+
 ![kakalan456](/demo/linebot.png)
